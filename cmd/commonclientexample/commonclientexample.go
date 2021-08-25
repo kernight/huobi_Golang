@@ -1,10 +1,10 @@
 package commonclientexample
 
 import (
-	"github.com/huobirdcenter/huobi_golang/config"
-	"github.com/huobirdcenter/huobi_golang/logging/applogger"
-	"github.com/huobirdcenter/huobi_golang/pkg/client"
-	"github.com/huobirdcenter/huobi_golang/pkg/model/common"
+	"github.com/kernight/huobi_golang/config"
+	"github.com/kernight/huobi_golang/logging/applogger"
+	"github.com/kernight/huobi_golang/pkg/client"
+	"github.com/kernight/huobi_golang/pkg/model/common"
 )
 
 func RunAllExamples() {
