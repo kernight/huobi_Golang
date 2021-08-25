@@ -54,7 +54,7 @@ func (p *PrivateUrlBuilder) BuildWithTime(method string, path string, utcDate ti
 
 	signature := p.signer.Sign(method, p.host, path, parameters)
 
-	url := fmt.Sprintf("https://%s%s?%s&Signature=%s", p.host, path, parameters, url.QueryEscape(signature))
+	url := fmt.Sprintf("%s%s?%s&Signature=%s", p.host, path, parameters, url.QueryEscape(signature))
 
 	return url
 }

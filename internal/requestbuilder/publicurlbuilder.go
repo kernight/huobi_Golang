@@ -16,10 +16,10 @@ func (p *PublicUrlBuilder) Init(host string) *PublicUrlBuilder {
 
 func (p *PublicUrlBuilder) Build(path string, request *model.GetRequest) string {
 	if request != nil {
-		result := fmt.Sprintf("https://%s%s?%s", p.host, path, request.BuildParams())
+		result := fmt.Sprintf("%s%s?%s", p.host, path, request.BuildParams())
 		return result
 	} else {
-		result := fmt.Sprintf("https://%s%s", p.host, path)
+		result := fmt.Sprintf("%s%s", p.host, path)
 		return result
 	}
 }
