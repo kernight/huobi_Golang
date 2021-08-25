@@ -24,6 +24,8 @@ func (p *Signer) Sign(method string, host string, path string, parameters string
 	var sb strings.Builder
 	sb.WriteString(method)
 	sb.WriteString("\n")
+	host = strings.Replace(host,"http://","",-1)
+	host = strings.Replace(host,"https://","",-1)
 	sb.WriteString(host)
 	sb.WriteString("\n")
 	sb.WriteString(path)
